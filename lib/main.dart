@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vestanesia/ui/login_page.dart';
 import 'package:vestanesia/ui/splash_page.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/': (context) => SplashSpage(),
+        'login': (context) => LoginPage(),
       },
     );
   }
