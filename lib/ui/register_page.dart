@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:vestanesia/shared/theme.dart';
 import 'package:vestanesia/widgets/form_input_with_title.dart';
 import 'package:vestanesia/widgets/other_account_button.dart';
 import 'package:vestanesia/widgets/primary_button.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class LoginPage extends StatelessWidget {
                 height: 32,
               ),
               Text(
-                "Silahkan masuk akun untuk mengetahui perkembangan investasi kamu.",
+                "Daftar akun dan mulai maskimalkan investasimu dengan Vestanesia.",
                 style: blackTextStyle.copyWith(
                     fontSize: 14, fontWeight: FontWeight.w400),
                 textAlign: TextAlign.center,
@@ -58,22 +57,6 @@ class LoginPage extends StatelessWidget {
                   hintText: "Masukkan Password",
                   obscureText: true),
               const SizedBox(
-                height: 8,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  GestureDetector(
-                    onTap: () => Navigator.pushNamed(context, "forgot-pass"),
-                    child: Text(
-                      "Lupa password?",
-                      style: primaryTextStyle.copyWith(
-                          fontSize: 14, fontWeight: FontWeight.w500),
-                    ),
-                  )
-                ],
-              ),
-              const SizedBox(
                 height: 20,
               ),
               PrimaryButton(
@@ -84,7 +67,7 @@ class LoginPage extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                "Atau masuk akun dengan",
+                "Atau daftar dengan",
                 style: greyTextStyle.copyWith(
                     fontSize: 14, fontWeight: FontWeight.w400),
               ),
@@ -99,7 +82,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Belum punya akun?",
+                    "Sudah punya akun?",
                     style: secondBlackTextStyle.copyWith(
                         fontSize: 14, fontWeight: FontWeight.w400),
                   ),
@@ -107,9 +90,9 @@ class LoginPage extends StatelessWidget {
                     width: 4,
                   ),
                   GestureDetector(
-                    onTap: () => Navigator.pushNamed(context, 'register'),
+                    onTap: () => Navigator.pop(context),
                     child: Text(
-                      "Daftar di sini",
+                      "Login di sini",
                       style: primaryTextStyle.copyWith(
                           fontSize: 14, fontWeight: FontWeight.w700),
                     ),

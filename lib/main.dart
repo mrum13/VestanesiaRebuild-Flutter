@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vestanesia/ui/forgot_pass_page.dart';
 import 'package:vestanesia/ui/login_page.dart';
+import 'package:vestanesia/ui/register_page.dart';
 import 'package:vestanesia/ui/splash_page.dart';
 
 void main() {
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashSpage(),
         'login': (context) => LoginPage(),
+        'register': (context) => RegisterPage(),
+        'forgot-pass': (context) => ForgotPassPage(),
       },
     );
   }

@@ -30,7 +30,7 @@ class FormInput extends StatelessWidget {
               greyTextStyle.copyWith(fontSize: 14, fontWeight: FontWeight.w400),
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(9),
-              borderSide: BorderSide(color: kBorderFormColor)),
+              borderSide: BorderSide(color: kThirdGreyColor)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(9),
               borderSide: BorderSide(color: kPrimaryColor))),
