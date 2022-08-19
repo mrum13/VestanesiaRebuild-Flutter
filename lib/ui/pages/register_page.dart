@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vestanesia/shared/theme.dart';
-import 'package:vestanesia/widgets/form_input_with_title.dart';
-import 'package:vestanesia/widgets/other_account_button.dart';
-import 'package:vestanesia/widgets/primary_button.dart';
+import 'package:vestanesia/ui/widgets/form_input_with_title.dart';
+import 'package:vestanesia/ui/widgets/other_account_button.dart';
+import 'package:vestanesia/ui/widgets/primary_button.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:vestanesia/shared/theme.dart';
-import 'package:vestanesia/widgets/form_input_with_title.dart';
-import 'package:vestanesia/widgets/other_account_button.dart';
-import 'package:vestanesia/widgets/primary_button.dart';
+import 'package:vestanesia/ui/widgets/form_input_with_title.dart';
+import 'package:vestanesia/ui/widgets/other_account_button.dart';
+import 'package:vestanesia/ui/widgets/primary_button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -78,7 +78,9 @@ class LoginPage extends StatelessWidget {
               ),
               PrimaryButton(
                 text: "Masuk Akun",
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "lengkapi-data1");
+                },
               ),
               const SizedBox(
                 height: 20,

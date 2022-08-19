@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:vestanesia/ui/forgot_pass_page.dart';
-import 'package:vestanesia/ui/login_page.dart';
-import 'package:vestanesia/ui/register_page.dart';
-import 'package:vestanesia/ui/splash_page.dart';
+import 'package:vestanesia/ui/pages/forgot_pass_page.dart';
+import 'package:vestanesia/ui/pages/lengkapi_data_1.dart';
+import 'package:vestanesia/ui/pages/login_page.dart';
+import 'package:vestanesia/ui/pages/register_page.dart';
+import 'package:vestanesia/ui/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         'login': (context) => LoginPage(),
         'register': (context) => RegisterPage(),
         'forgot-pass': (context) => ForgotPassPage(),
+        'lengkapi-data1': (context) => LengkapiData1Page(),
       },
     );
   }

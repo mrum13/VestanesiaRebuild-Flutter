@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:vestanesia/shared/theme.dart';
-import 'package:vestanesia/widgets/form_input.dart';
+import 'package:vestanesia/ui/widgets/form_input.dart';
 
 class FormInputTitle extends StatelessWidget {
   final String title;
   final String hintText;
   final bool obscureText;
   final TextEditingController controller;
+  final int maxLines;
 
   const FormInputTitle({
     Key? key,
@@ -14,6 +15,7 @@ class FormInputTitle extends StatelessWidget {
     required this.controller,
     required this.hintText,
     required this.obscureText,
+    this.maxLines = 1,
   }) : super(key: key);
 
   @override
@@ -30,6 +32,7 @@ class FormInputTitle extends StatelessWidget {
           height: 4,
         ),
         FormInput(
+            maxLines: maxLines,
             hintText: hintText,
             obscureText: obscureText,
             controller: controller)

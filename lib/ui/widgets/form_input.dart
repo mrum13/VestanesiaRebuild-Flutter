@@ -5,17 +5,20 @@ class FormInput extends StatelessWidget {
   final String hintText;
   final bool obscureText;
   final TextEditingController controller;
+  final int maxLines;
 
-  const FormInput(
-      {Key? key,
-      required this.hintText,
-      required this.obscureText,
-      required this.controller})
-      : super(key: key);
+  const FormInput({
+    Key? key,
+    required this.hintText,
+    required this.obscureText,
+    required this.controller,
+    required this.maxLines,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLines: maxLines,
       controller: controller,
       obscureText: obscureText,
       cursorColor: kBlackColor,
@@ -24,7 +27,8 @@ class FormInput extends StatelessWidget {
           filled: true,
           fillColor: kThirdGreyColor,
           isDense: true,
-          contentPadding: EdgeInsets.symmetric(vertical: 13, horizontal: 16),
+          contentPadding:
+              const EdgeInsets.symmetric(vertical: 13, horizontal: 16),
           hintText: hintText,
           hintStyle:
               greyTextStyle.copyWith(fontSize: 14, fontWeight: FontWeight.w400),
