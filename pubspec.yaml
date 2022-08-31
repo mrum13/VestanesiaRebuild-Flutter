@@ -49,6 +49,7 @@ dev_dependencies:
   equatable: ^2.0.3
   flutter_bloc: ^8.0.1
   dropdown_search: ^5.0.2
+  percent_indicator: ^4.2.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

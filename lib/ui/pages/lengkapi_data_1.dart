@@ -276,7 +276,11 @@ class _LengkapiData1PageState extends State<LengkapiData1Page> {
                     const SizedBox(
                       height: 24,
                     ),
-                    PrimaryButton(text: "Selanjutnya", onTap: () {}),
+                    PrimaryButton(
+                        text: "Selanjutnya",
+                        onTap: () {
+                          Navigator.pushNamed(context, 'lengkapi-data2');
+                        }),
                     const SizedBox(
                       height: 24,
                     )

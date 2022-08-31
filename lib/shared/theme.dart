@@ -12,6 +12,8 @@ Color kSecondGreyColor = Color(0xff00261C);
 Color kThirdGreyColor = Color(0xffF5F6F8);
 Color kBorderFormColor = Color(0xffDEDEDE);
 Color kFbColor = Color(0xff3B5998);
+Color kCardBorderColor = Color(0xffD9E0EC);
+Color kTransparentColor = Colors.transparent;
 
 TextStyle primaryTextStyle = GoogleFonts.inter(color: kPrimaryColor);
 TextStyle whiteTextStyle = GoogleFonts.inter(color: kWhiteColor);

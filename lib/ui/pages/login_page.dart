@@ -79,7 +79,7 @@ class LoginPage extends StatelessWidget {
               PrimaryButton(
                 text: "Masuk Akun",
                 onTap: () {
-                  Navigator.pushNamed(context, "lengkapi-data1");
+                  Navigator.pushNamed(context, "main");
                 },
               ),
               const SizedBox(
